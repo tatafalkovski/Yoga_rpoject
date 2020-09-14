@@ -167,10 +167,11 @@ header {
 .form-left {
   background: #ffffff;
   border-radius: 20px;
-  width: 40%;
+  width: 35%;
   padding: 40px 50px 80px;
   text-align: center;
   margin-top: 400px;
+  filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 0.15));
   @media screen and (max-width: 1440px) {
     margin-top: 200px;
   }
