@@ -41,6 +41,7 @@ li {
 a {
   text-decoration: none;
   color: #515151;
+  white-space: nowrap;
 }
 
 h1 {
@@ -49,6 +50,9 @@ h1 {
   color: #000000;
   font-weight: normal;
   margin: 0;
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
 }
 
 h6 {
@@ -57,4 +61,8 @@ h6 {
   line-height: 27px;
   text-transform: uppercase;
   color: #000000;
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+    font-size: 18px;
+  }
 }

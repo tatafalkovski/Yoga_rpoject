@@ -27,13 +27,15 @@
     }
     @media screen and (max-width: 960px) {
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 480px) {
+      background-image: url(/images/main-image-mob.png);
+      width: 100%;
     }
     @media screen and (max-width: 480px) {
     }
   }
   &__girl {
-    background-image: url(/images/yoga-girl.png);
+    background-image: url(/dist/images/yoga-girl.png);
     left: 0;
     width: 35%;
     background-position: center left;
@@ -43,13 +45,15 @@
     }
     @media screen and (max-width: 960px) {
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 480px) {
+      background-image: url(/dist/images/yoga-girl-mob.png);
+      width: 100%;
     }
     @media screen and (max-width: 480px) {
     }
   }
   &__man {
-    background-image: url(/images/yoga-man.png);
+    background-image: url(/dist/images/yoga-man.png);
     right: 0;
     bottom: 0;
     width: 54%;
@@ -60,13 +64,17 @@
     }
     @media screen and (max-width: 960px) {
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 480px) {
+      background-image: url(/dist/images/yoga-man-mob.png);
+      width: 100%;
     }
     @media screen and (max-width: 480px) {
     }
   }
 }
-
+.logo {
+  margin-right: 10px;
+}
 .circule {
   width: 48px;
   height: 48px;
@@ -97,6 +105,10 @@ header {
     width: 50%;
   }
   &-2 {
+    width: 25%;
+    @media screen and (max-width: 470px) {
+      display: none;
+    }
   }
 }
 
@@ -105,12 +117,18 @@ header {
   ul {
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 470px) {
+      display: none;
+    }
     li {
       text-transform: uppercase;
       font-size: 18px;
       font-weight: 400;
       line-height: 22px;
       color: #515151;
+      @media screen and (max-width: 768px) {
+        font-size: 12px;
+      }
     }
   }
 }
@@ -119,13 +137,15 @@ header {
   padding: 15px 40px;
   background: linear-gradient(0deg, #5933af -38.24%, #e695e9 161.76%);
   border-radius: 40px;
-  .p-button {
-    font-size: 18px;
-    line-height: 3px;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-align: center;
-    margin: 0;
+  font-size: 18px;
+  line-height: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  @media screen and (max-width: 768px) {
+    padding: 15px;
+    font-size: 14px;
   }
 }
 
@@ -133,36 +153,82 @@ header {
   height: 80vh;
   display: flex;
   align-items: center;
+
   @media screen and (max-width: 1440px) {
-    height: 70vh;
+    height: 50vh;
+  }
+  @media screen and (max-width: 768px) {
+    height: 50vh;
+    position: relative;
+    display: block;
+  }
+  @media screen and (max-width: 480px) {
+    height: 90vh;
   }
 }
 
 .pink-button {
-  width: 258px;
-  height: 48px;
+  padding: 14px 70px;
   background: linear-gradient(360deg, #e695e9 -18.75%, #f3b3a1 143.75%);
   border-radius: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  p {
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #000000;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
+  @media screen and (max-width: 960px) {
+    padding: 14px 50px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 15px;
+    position: absolute;
+    bottom: 80px;
+    text-align: center;
+  }
+  @media screen and (max-width: 480px) {
+    width: 100%;
   }
 }
 .about-us {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 300px;
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 0;
+  }
+  @media screen and (max-width: 467px) {
+    height: 100vh;
+  }
 }
 .body {
   width: 50%;
   margin-top: 300px;
   @media screen and (max-width: 1440px) {
     margin-top: 180px;
+  }
+  @media screen and (max-width: 1024px) {
+    margin-top: 0;
+  }
+  @media screen and (max-width: 768px) {
+    width: 70%;
+    p {
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+  p {
+    font-size: 18px;
+    line-height: 19px;
+    letter-spacing: 0.07em;
+    color: #000000;
+  }
+}
+.form {
+  @media screen and (max-width: 768px) {
+    height: 100vh;
+    padding-top: 100px;
   }
 }
 
@@ -177,9 +243,19 @@ header {
   @media screen and (max-width: 1440px) {
     margin-top: 200px;
   }
-  .pink-button {
+  @media screen and (max-width: 1200px) {
+    width: 40%;
+  }
+  @media screen and (max-width: 1024px) {
+    width: 45%;
+    margin-top: 30px;
+  }
+  @media screen and (max-width: 768px) {
     width: 100%;
-    margin-top: 100px;
+    padding: 30px 15px 40px;
+  }
+  .pink-button {
+    position: static;
   }
 }
 
@@ -195,6 +271,9 @@ input {
   letter-spacing: 0.07em;
   color: #737070;
   padding: 10px;
+  @media screen and (max-width: 467px) {
+    padding: 5px;
+  }
 }
 
 label {
