@@ -72,39 +72,39 @@ h6 {
   background-repeat: no-repeat;
 
   &__main {
-    background-image: url(/images/main-image.png);
+    background-image: url(../images/main-image.png);
     top: 0;
     right: 0;
     width: 60%;
     background-position: top right;
 
     @media screen and (max-width: 480px) {
-      background-image: url(/images/main-image-mob.png);
+      background-image: url(../images/main-image-mob.png);
       width: 100%;
     }
   }
 
   &__girl {
-    background-image: url(/dist/images/yoga-girl.png);
+    background-image: url(../images/yoga-girl.png);
     left: 0;
     width: 35%;
     background-position: center left;
 
     @media screen and (max-width: 480px) {
-      background-image: url(/dist/images/yoga-girl-mob.png);
+      background-image: url(/../images/yoga-girl-mob.png);
       width: 100%;
     }
   }
 
   &__man {
-    background-image: url(/dist/images/yoga-man.png);
+    background-image: url(../images/yoga-man.png);
     right: 0;
     bottom: 0;
     width: 54%;
     background-position: bottom right;
 
     @media screen and (max-width: 480px) {
-      background-image: url(/dist/images/yoga-man-mob.png);
+      background-image: url(../images/yoga-man-mob.png);
       width: 100%;
     }
   }
